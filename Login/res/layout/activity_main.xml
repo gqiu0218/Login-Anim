@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.login.MainActivity" >
+
+    <ImageView
+        android:id="@+id/ivFace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/pic1" />
+
+    <ImageView
+        android:id="@+id/ivLeftHand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivNose"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="-10dp"
+        android:layout_toLeftOf="@+id/ivNose"
+        android:background="@drawable/pic2" />
+
+    <ImageView
+        android:id="@+id/ivRightHand2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivNose"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="-10dp"
+        android:layout_toRightOf="@+id/ivNose"
+        android:background="@drawable/pic3" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ivFace"
+        android:layout_marginTop="-8dp"
+        android:background="@drawable/pic5"
+        android:imeOptions="actionNext"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etPwd"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etName"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pic5"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/ivNose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etName"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pic6" />
+
+    <ImageView
+        android:id="@+id/ivLeftHand1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etName"
+        android:layout_marginRight="40dp"
+        android:layout_toLeftOf="@+id/ivNose"
+        android:background="@drawable/pic4" />
+
+    <ImageView
+        android:id="@+id/ivRightHand1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etName"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/ivNose"
+        android:background="@drawable/pic4" />
+
+</RelativeLayout>
